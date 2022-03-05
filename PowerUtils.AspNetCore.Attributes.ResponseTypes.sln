@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.project", "1.project", "{30216EF7-E82A-4F92-A256-CF7C109C0A74}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		CHANGELOG.md = CHANGELOG.md
+		global.json = global.json
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.cicd", "2.cicd", "{4EAA184F-6862-4EBF-B431-FF18B87008B1}"
+	ProjectSection(SolutionItems) = preProject
+		.github\dependabot.yml = .github\dependabot.yml
+		.github\workflows\publish-nuget.yml = .github\workflows\publish-nuget.yml
+		.github\workflows\sonarcloud.yml = .github\workflows\sonarcloud.yml
+		.github\workflows\test-project.yml = .github\workflows\test-project.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.src", "3.src", "{FDB743F4-F741-4092-BDD2-DD95DBF066D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerUtils.AspNetCore.Attributes.ResponseTypes", "src\PowerUtils.AspNetCore.Attributes.ResponseTypes.csproj", "{53B957E1-7867-45D0-9C2E-DA1D6CB52BAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.tests", "4.tests", "{897648D7-846B-468F-8FB7-16AA9F5421B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerUtils.AspNetCore.Attributes.ResponseTypes.Tests", "tests\PowerUtils.AspNetCore.Attributes.ResponseTypes.Tests\PowerUtils.AspNetCore.Attributes.ResponseTypes.Tests.csproj", "{7C2872B0-B8E8-4E55-A4F3-427A7CE454BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53B957E1-7867-45D0-9C2E-DA1D6CB52BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B957E1-7867-45D0-9C2E-DA1D6CB52BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B957E1-7867-45D0-9C2E-DA1D6CB52BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B957E1-7867-45D0-9C2E-DA1D6CB52BAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C2872B0-B8E8-4E55-A4F3-427A7CE454BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C2872B0-B8E8-4E55-A4F3-427A7CE454BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C2872B0-B8E8-4E55-A4F3-427A7CE454BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C2872B0-B8E8-4E55-A4F3-427A7CE454BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{53B957E1-7867-45D0-9C2E-DA1D6CB52BAF} = {FDB743F4-F741-4092-BDD2-DD95DBF066D4}
+		{7C2872B0-B8E8-4E55-A4F3-427A7CE454BC} = {897648D7-846B-468F-8FB7-16AA9F5421B8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F88FC247-4F7A-4960-942D-DAFD5A3BE251}
+	EndGlobalSection
+EndGlobal

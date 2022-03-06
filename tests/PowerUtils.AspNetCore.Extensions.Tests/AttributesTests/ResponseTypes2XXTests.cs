@@ -1,4 +1,4 @@
-﻿using PowerUtils.AspNetCore.Extensions.Attributes;
+﻿using PowerUtils.AspNetCore.Attributes;
 using PowerUtils.AspNetCore.Extensions.Tests.Fakes;
 
 namespace PowerUtils.AspNetCore.Extensions.Tests.AttributesTests;

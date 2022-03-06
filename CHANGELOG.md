@@ -11,7 +11,7 @@
 
 ### Breaking Changes
 
-- namespace `PowerUtils.AspNetCore.WebAPI.Attributes.ResponseTypes` named to `PowerUtils.AspNetCore.Extensions.Attributes`;
+- namespace `PowerUtils.AspNetCore.WebAPI.Attributes.ResponseTypes` named to `PowerUtils.AspNetCore.Attributes`;
 - `Response200OK` named to `Response200Attribute`;
 - `Response201Created` named to `Response201Attribute`;
 - `Response204NoContent` named to `Response204Attribute`;

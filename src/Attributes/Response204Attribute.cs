@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace PowerUtils.AspNetCore.Extensions.Attributes
+namespace PowerUtils.AspNetCore.Attributes
 {
     public class Response204Attribute : ProducesResponseTypeAttribute
     {

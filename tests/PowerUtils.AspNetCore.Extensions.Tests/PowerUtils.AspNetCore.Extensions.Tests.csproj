@@ -48,4 +48,9 @@
     <Using Include="FluentAssertions" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <Folder Include="ExtensionsTests\" />
+  </ItemGroup>
+
 </Project>

@@ -15,6 +15,7 @@
 - `Response200OK` named to `Response200Attribute`;
 - `Response201Created` named to `Response201Attribute`;
 - `Response204NoContent` named to `Response204Attribute`;
+- Changed protected level of the `RoutePrefixConvention` to `internal`;
 
 
 ### New Features

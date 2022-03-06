@@ -20,6 +20,8 @@ Utils, helpers and extensions to AspNetCore
 
 - [Installation](#Installation)
 - [Attributes](#Attributes)
+- [Extensions](#Extensions)
+  - [UseGeneralRoutePrefix](#Extensions.UseGeneralRoutePrefix)
 
 
 ## Documentation
@@ -79,6 +81,25 @@ dotnet add package PowerUtils.AspNetCore.Extensions
   - `Response429Attribute`;
   - `Response431Attribute`;
   - `Response451Attribute`;
+
+
+
+### Extensions <a name="Extensions"></a>
+
+
+#### UseGeneralRoutePrefix <a name="Extensions.UseGeneralRoutePrefix"></a>
+
+```csharp
+public class Startup
+{
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddControllers(configure =>
+            configure.UseGeneralRoutePrefix("/samples")
+        );
+    }
+}
+```
 
 
 

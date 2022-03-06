@@ -6,10 +6,10 @@ namespace PowerUtils.AspNetCore.Extensions.Tests.AttributesTests;
 public class ResponseTypes2XXTests
 {
     [Fact]
-    public void Constructor_Response200OKAttribute()
+    public void Constructor_Response200Attribute()
     {
         // Arrange && Act
-        var act = new Response200OKAttribute(typeof(FakeResponse));
+        var act = new Response200Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -21,10 +21,10 @@ public class ResponseTypes2XXTests
     }
 
     [Fact]
-    public void Constructor_Response201CreatedAttribute()
+    public void Constructor_Response201Attribute()
     {
         // Arrange && Act
-        var act = new Response201CreatedAttribute(typeof(FakeResponse));
+        var act = new Response201Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -36,10 +36,10 @@ public class ResponseTypes2XXTests
     }
 
     [Fact]
-    public void Constructor_Response202AcceptedAttribute()
+    public void Constructor_Response202Attribute()
     {
         // Arrange && Act
-        var act = new Response202AcceptedAttribute(typeof(FakeResponse));
+        var act = new Response202Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -51,10 +51,10 @@ public class ResponseTypes2XXTests
     }
 
     [Fact]
-    public void Constructor_Response203NonAuthoritativeAttribute()
+    public void Constructor_Response203Attribute()
     {
         // Arrange && Act
-        var act = new Response203NonAuthoritativeAttribute(typeof(FakeResponse));
+        var act = new Response203Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -66,10 +66,10 @@ public class ResponseTypes2XXTests
     }
 
     [Fact]
-    public void Constructor_Response204NoContentAttribute()
+    public void Constructor_Response204Attribute()
     {
         // Arrange && Act
-        var act = new Response204NoContentAttribute();
+        var act = new Response204Attribute();
 
 
         // Assert
@@ -81,10 +81,10 @@ public class ResponseTypes2XXTests
     }
 
     [Fact]
-    public void Constructor_Response205ResetContentAttribute()
+    public void Constructor_Response205Attribute()
     {
         // Arrange && Act
-        var act = new Response205ResetContentAttribute(typeof(FakeResponse));
+        var act = new Response205Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -96,10 +96,10 @@ public class ResponseTypes2XXTests
     }
 
     [Fact]
-    public void Constructor_Response206PartialContentAttribute()
+    public void Constructor_Response206Attribute()
     {
         // Arrange && Act
-        var act = new Response206PartialContentAttribute(typeof(FakeResponse));
+        var act = new Response206Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -111,10 +111,10 @@ public class ResponseTypes2XXTests
     }
 
     [Fact]
-    public void Constructor_Response207MultiStatusAttribute()
+    public void Constructor_Response207Attribute()
     {
         // Arrange && Act
-        var act = new Response207MultiStatusAttribute(typeof(FakeResponse));
+        var act = new Response207Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -126,10 +126,10 @@ public class ResponseTypes2XXTests
     }
 
     [Fact]
-    public void Constructor_Response208AlreadyReportedAttribute()
+    public void Constructor_Response208Attribute()
     {
         // Arrange && Act
-        var act = new Response208AlreadyReportedAttribute(typeof(FakeResponse));
+        var act = new Response208Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -141,10 +141,10 @@ public class ResponseTypes2XXTests
     }
 
     [Fact]
-    public void Constructor_Response226IMUsedAttribute()
+    public void Constructor_Response226Attribute()
     {
         // Arrange && Act
-        var act = new Response226IMUsedAttribute(typeof(FakeResponse));
+        var act = new Response226Attribute(typeof(FakeResponse));
 
 
         // Assert

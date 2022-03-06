@@ -42,41 +42,43 @@ dotnet add package PowerUtils.AspNetCore.Extensions
 
 
 ### Attributes <a name="Attributes"></a>
-- `Response200OK`;
-- `Response201Created`;
-- `Response202Accepted`;
-- `Response203NonAuthoritative`;
-- `Response204NoContent`;
-- `Response205ResetContent`;
-- `Response206PartialContent`;
-- `Response207MultiStatus`;
-- `Response208AlreadyReported`;
-- `Response226IMUsed`;
-- `Response400BadRequest`;
-- `Response401Unauthorized`;
-- `Response402PaymentRequired`;
-- `Response403Forbidden`;
-- `Response404NotFound`;
-- `Response405MethodNotAllowed`;
-- `Response406NotAcceptable`;
-- `Response407ProxyAuthenticationRequired`;
-- `Response408RequestTimeout`;
-- `Response409Conflict`;
-- `Response410Gone`;
-- `Response411LengthRequired`;
-- `Response412PreconditionFailed`;
-- `Response413RequestEntityTooLarge`;
-- `Response414RequestUriTooLong`;
-- `Response415UnsupportedMediaType`;
-- `Response416RequestedRangeNotSatisfiable`;
-- `Response417ExpectationFailed`;
-- `Response418ImATeapot`;
-- `Response422UnprocessableEntity`;
-- `Response426UpgradeRequired`;
-- `Response428PreconditionRequired`;
-- `Response429TooManyRequests`;
-- `Response431RequestHeaderFieldsTooLarge`;
-- `Response451UnavailableForLegalReasons`;
+- `Response2XX`;
+  - `Response200Attribute`;
+  - `Response201Attribute`;
+  - `Response202Attribute`;
+  - `Response203Attribute`;
+  - `Response204Attribute`;
+  - `Response205Attribute`;
+  - `Response206Attribute`;
+  - `Response207Attribute`;
+  - `Response208Attribute`;
+  - `Response226Attribute`;
+- `Response4XX`;
+  - `Response400Attribute`;
+  - `Response401Attribute`;
+  - `Response402Attribute`;
+  - `Response403Attribute`;
+  - `Response404Attribute`;
+  - `Response405Attribute`;
+  - `Response406Attribute`;
+  - `Response407Attribute`;
+  - `Response408Attribute`;
+  - `Response409Attribute`;
+  - `Response410Attribute`;
+  - `Response411Attribute`;
+  - `Response412Attribute`;
+  - `Response413Attribute`;
+  - `Response414Attribute`;
+  - `Response415Attribute`;
+  - `Response416Attribute`;
+  - `Response417Attribute`;
+  - `Response418Attribute`;
+  - `Response422Attribute`;
+  - `Response426Attribute`;
+  - `Response428Attribute`;
+  - `Response429Attribute`;
+  - `Response431Attribute`;
+  - `Response451Attribute`;
 
 
 

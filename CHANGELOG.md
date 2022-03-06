@@ -12,40 +12,43 @@
 ### Breaking Changes
 
 - namespace `PowerUtils.AspNetCore.WebAPI.Attributes.ResponseTypes` named to `PowerUtils.AspNetCore.Extensions.Attributes`;
+- `Response200OK` named to `Response200Attribute`;
+- `Response201Created` named to `Response201Attribute`;
+- `Response204NoContent` named to `Response204Attribute`;
 
 
 ### New Features
 
 - Added new Attributes:
-  - Response202Accepted;
-  - Response203NonAuthoritative;
-  - Response205ResetContent;
-  - Response206PartialContent;
-  - Response207MultiStatus;
-  - Response208AlreadyReported;
-  - Response226IMUsed;
-  - Response400BadRequest with custom type;
-  - Response401Unauthorized with custom type;
-  - Response402PaymentRequired;
-  - Response403Forbidden with custom type;
-  - Response404NotFound with custom type;
-  - Response405MethodNotAllowed;
-  - Response406NotAcceptable;
-  - Response407ProxyAuthenticationRequired;
-  - Response408RequestTimeout;
-  - Response409Conflict with custom type;
-  - Response410Gone;
-  - Response411LengthRequired;
-  - Response412PreconditionFailed;
-  - Response413RequestEntityTooLarge;
-  - Response414RequestUriTooLong;
-  - Response415UnsupportedMediaType with custom type;
-  - Response416RequestedRangeNotSatisfiable;
-  - Response417ExpectationFailed;
-  - Response418ImATeapot;
-  - Response422UnprocessableEntity;
-  - Response426UpgradeRequired;
-  - Response428PreconditionRequired;
-  - Response429TooManyRequests;
-  - Response431RequestHeaderFieldsTooLarge;
-  - Response451UnavailableForLegalReasons;
+  - Response202Attribute;
+  - Response203Attribute;
+  - Response205Attribute;
+  - Response206Attribute;
+  - Response207Attribute;
+  - Response208Attribute;
+  - Response226Attribute;
+  - Response400Attribute with custom type;
+  - Response401Attribute with custom type;
+  - Response402Attribute;
+  - Response403Attribute with custom type;
+  - Response404Attribute with custom type;
+  - Response405Attribute;
+  - Response406Attribute;
+  - Response407Attribute;
+  - Response408Attribute;
+  - Response409Attribute with custom type;
+  - Response410Attribute;
+  - Response411Attribute;
+  - Response412Attribute;
+  - Response413Attribute;
+  - Response414Attribute;
+  - Response415Attribute with custom type;
+  - Response416Attribute;
+  - Response417Attribute;
+  - Response418Attribute;
+  - Response422Attribute;
+  - Response426Attribute;
+  - Response428Attribute;
+  - Response429Attribute;
+  - Response431Attribute;
+  - Response451Attribute;

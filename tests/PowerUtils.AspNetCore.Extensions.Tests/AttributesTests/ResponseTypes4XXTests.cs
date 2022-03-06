@@ -6,10 +6,10 @@ namespace PowerUtils.AspNetCore.Extensions.Tests.AttributesTests;
 public class ResponseTypes4XXTests
 {
     [Fact]
-    public void Constructor_Response400BadRequestAttribute()
+    public void Constructor_Response400Attribute()
     {
         // Arrange && Act
-        var act = new Response400BadRequestAttribute(typeof(FakeResponse));
+        var act = new Response400Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -21,10 +21,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response401UnauthorizedAttribute()
+    public void Constructor_Response401Attribute()
     {
         // Arrange && Act
-        var act = new Response401UnauthorizedAttribute(typeof(FakeResponse));
+        var act = new Response401Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -36,10 +36,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response402PaymentRequiredAttribute()
+    public void Constructor_Response402Attribute()
     {
         // Arrange && Act
-        var act = new Response402PaymentRequiredAttribute(typeof(FakeResponse));
+        var act = new Response402Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -51,10 +51,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response403ForbiddenAttribute()
+    public void Constructor_Response403Attribute()
     {
         // Arrange && Act
-        var act = new Response403ForbiddenAttribute(typeof(FakeResponse));
+        var act = new Response403Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -66,10 +66,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response404NotFoundAttribute()
+    public void Constructor_Response404Attribute()
     {
         // Arrange && Act
-        var act = new Response404NotFoundAttribute(typeof(FakeResponse));
+        var act = new Response404Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -81,10 +81,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response405MethodNotAllowedAttribute()
+    public void Constructor_Response405Attribute()
     {
         // Arrange && Act
-        var act = new Response405MethodNotAllowedAttribute(typeof(FakeResponse));
+        var act = new Response405Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -96,10 +96,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response406NotAcceptableAttribute()
+    public void Constructor_Response406Attribute()
     {
         // Arrange && Act
-        var act = new Response406NotAcceptableAttribute(typeof(FakeResponse));
+        var act = new Response406Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -111,10 +111,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response407ProxyAuthenticationRequiredAttribute()
+    public void Constructor_Response407Attribute()
     {
         // Arrange && Act
-        var act = new Response407ProxyAuthenticationRequiredAttribute(typeof(FakeResponse));
+        var act = new Response407Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -126,10 +126,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response408RequestTimeoutAttribute()
+    public void Constructor_Response408Attribute()
     {
         // Arrange && Act
-        var act = new Response408RequestTimeoutAttribute(typeof(FakeResponse));
+        var act = new Response408Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -141,10 +141,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response409ConflictAttribute()
+    public void Constructor_Response409Attribute()
     {
         // Arrange && Act
-        var act = new Response409ConflictAttribute(typeof(FakeResponse));
+        var act = new Response409Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -156,10 +156,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response410GoneAttribute()
+    public void Constructor_Response410Attribute()
     {
         // Arrange && Act
-        var act = new Response410GoneAttribute(typeof(FakeResponse));
+        var act = new Response410Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -171,10 +171,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response411LengthRequiredAttribute()
+    public void Constructor_Response411Attribute()
     {
         // Arrange && Act
-        var act = new Response411LengthRequiredAttribute(typeof(FakeResponse));
+        var act = new Response411Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -186,10 +186,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response412PreconditionFailedAttribute()
+    public void Constructor_Response412Attribute()
     {
         // Arrange && Act
-        var act = new Response412PreconditionFailedAttribute(typeof(FakeResponse));
+        var act = new Response412Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -201,10 +201,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response413RequestEntityTooLargeAttribute()
+    public void Constructor_Response413Attribute()
     {
         // Arrange && Act
-        var act = new Response413RequestEntityTooLargeAttribute(typeof(FakeResponse));
+        var act = new Response413Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -216,10 +216,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response414RequestUriTooLongAttribute()
+    public void Constructor_Response414Attribute()
     {
         // Arrange && Act
-        var act = new Response414RequestUriTooLongAttribute(typeof(FakeResponse));
+        var act = new Response414Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -231,10 +231,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response415UnsupportedMediaTypeAttribute()
+    public void Constructor_Response415Attribute()
     {
         // Arrange && Act
-        var act = new Response415UnsupportedMediaTypeAttribute(typeof(FakeResponse));
+        var act = new Response415Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -246,10 +246,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response416RequestedRangeNotSatisfiableAttribute()
+    public void Constructor_Response416Attribute()
     {
         // Arrange && Act
-        var act = new Response416RequestedRangeNotSatisfiableAttribute(typeof(FakeResponse));
+        var act = new Response416Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -261,10 +261,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response417ExpectationFailedAttribute()
+    public void Constructor_Response417Attribute()
     {
         // Arrange && Act
-        var act = new Response417ExpectationFailedAttribute(typeof(FakeResponse));
+        var act = new Response417Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -276,10 +276,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response418ImATeapotAttribute()
+    public void Constructor_Response418Attribute()
     {
         // Arrange && Act
-        var act = new Response418ImATeapotAttribute(typeof(FakeResponse));
+        var act = new Response418Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -291,10 +291,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response422UnprocessableEntityAttribute()
+    public void Constructor_Response422Attribute()
     {
         // Arrange && Act
-        var act = new Response422UnprocessableEntityAttribute(typeof(FakeResponse));
+        var act = new Response422Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -306,10 +306,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response426UpgradeRequiredAttribute()
+    public void Constructor_Response426Attribute()
     {
         // Arrange && Act
-        var act = new Response426UpgradeRequiredAttribute(typeof(FakeResponse));
+        var act = new Response426Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -321,10 +321,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response428PreconditionRequiredAttribute()
+    public void Constructor_Response428Attribute()
     {
         // Arrange && Act
-        var act = new Response428PreconditionRequiredAttribute(typeof(FakeResponse));
+        var act = new Response428Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -336,10 +336,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response429TooManyRequestsAttribute()
+    public void Constructor_Response429Attribute()
     {
         // Arrange && Act
-        var act = new Response429TooManyRequestsAttribute(typeof(FakeResponse));
+        var act = new Response429Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -351,10 +351,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response431RequestHeaderFieldsTooLargeAttribute()
+    public void Constructor_Response431Attribute()
     {
         // Arrange && Act
-        var act = new Response431RequestHeaderFieldsTooLargeAttribute(typeof(FakeResponse));
+        var act = new Response431Attribute(typeof(FakeResponse));
 
 
         // Assert
@@ -366,10 +366,10 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response451UnavailableForLegalReasonsAttribute()
+    public void Constructor_Response451Attribute()
     {
         // Arrange && Act
-        var act = new Response451UnavailableForLegalReasonsAttribute(typeof(FakeResponse));
+        var act = new Response451Attribute(typeof(FakeResponse));
 
 
         // Assert

@@ -1,13 +1,13 @@
-# PowerUtils.AspNetCore.Attributes.ResponseTypes
-Extensions to standardize ResponseType attributes
+# PowerUtils.AspNetCore.Extensions
+Utils, helpers and extensions to AspNetCore
 
-![Tests](https://github.com/TechNobre/PowerUtils.AspNetCore.Attributes.ResponseTypes/actions/workflows/test-project.yml/badge.svg)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=TechNobre_PowerUtils.AspNetCore.Attributes.ResponseTypes&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=TechNobre_PowerUtils.AspNetCore.Attributes.ResponseTypes)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=TechNobre_PowerUtils.AspNetCore.Attributes.ResponseTypes&metric=coverage)](https://sonarcloud.io/summary/new_code?id=TechNobre_PowerUtils.AspNetCore.Attributes.ResponseTypes)
+![Tests](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/actions/workflows/test-project.yml/badge.svg)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=TechNobre_PowerUtils.AspNetCore.Extensions&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=TechNobre_PowerUtils.AspNetCore.Extensions)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=TechNobre_PowerUtils.AspNetCore.Extensions&metric=coverage)](https://sonarcloud.io/summary/new_code?id=TechNobre_PowerUtils.AspNetCore.Extensions)
 
-[![NuGet](https://img.shields.io/nuget/v/PowerUtils.AspNetCore.Attributes.ResponseTypes.svg)](https://www.nuget.org/packages/PowerUtils.AspNetCore.Attributes.ResponseTypes)
-[![Nuget](https://img.shields.io/nuget/dt/PowerUtils.AspNetCore.Attributes.ResponseTypes.svg)](https://www.nuget.org/packages/PowerUtils.AspNetCore.Attributes.ResponseTypes)
-[![License: MIT](https://img.shields.io/github/license/TechNobre/PowerUtils.AspNetCore.Attributes.ResponseTypes.svg)](https://github.com/TechNobre/PowerUtils.AspNetCore.Attributes.ResponseTypes/blob/main/LICENSE)
+[![NuGet](https://img.shields.io/nuget/v/PowerUtils.AspNetCore.Extensions.svg)](https://www.nuget.org/packages/PowerUtils.AspNetCore.Extensions)
+[![Nuget](https://img.shields.io/nuget/dt/PowerUtils.AspNetCore.Extensions.svg)](https://www.nuget.org/packages/PowerUtils.AspNetCore.Extensions)
+[![License: MIT](https://img.shields.io/github/license/TechNobre/PowerUtils.AspNetCore.Extensions.svg)](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/blob/main/LICENSE)
 
 
 
@@ -27,16 +27,16 @@ Extensions to standardize ResponseType attributes
 ### How to use
 
 #### Install NuGet package <a name="Installation"></a>
-This package is available through Nuget Packages: https://www.nuget.org/packages/PowerUtils.AspNetCore.Attributes.ResponseTypes
+This package is available through Nuget Packages: https://www.nuget.org/packages/PowerUtils.AspNetCore.Extensions
 
 **Nuget**
 ```bash
-Install-Package PowerUtils.AspNetCore.Attributes.ResponseTypes
+Install-Package PowerUtils.AspNetCore.Extensions
 ```
 
 **.NET CLI**
 ```
-dotnet add package PowerUtils.AspNetCore.Attributes.ResponseTypes
+dotnet add package PowerUtils.AspNetCore.Extensions
 ```
 
 
@@ -89,7 +89,7 @@ dotnet add package PowerUtils.AspNetCore.Attributes.ResponseTypes
 
 ## LICENSE
 
-[MIT](https://github.com/TechNobre/PowerUtils.AspNetCore.Attributes.ResponseTypes/blob/main/LICENSE)
+[MIT](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/blob/main/LICENSE)
 
 
 

@@ -11,7 +11,7 @@
 
 ### Breaking Changes
 
-- namespace `PowerUtils.AspNetCore.WebAPI.Attributes.ResponseTypes` named to `PowerUtils.AspNetCore.Attributes.ResponseTypes`;
+- namespace `PowerUtils.AspNetCore.WebAPI.Attributes.ResponseTypes` named to `PowerUtils.AspNetCore.Extensions.Attributes`;
 
 
 ### New Features

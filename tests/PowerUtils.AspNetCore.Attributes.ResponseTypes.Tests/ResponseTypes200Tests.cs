@@ -1,7 +1,4 @@
-﻿using PowerUtils.Text.Tests;
-using Xunit;
-
-namespace PowerUtils.AspNetCore.Attributes.ResponseTypes.Tests;
+﻿namespace PowerUtils.AspNetCore.Attributes.ResponseTypes.Tests;
 
 public class ResponseTypes200Tests
 {

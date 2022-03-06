@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
 
-    <RootNamespace>PowerUtils.Text.Tests</RootNamespace>
-    <AssemblyName>PowerUtils.Text.Tests</AssemblyName>
+    <RootNamespace>PowerUtils.AspNetCore.Attributes.ResponseTypes.Tests</RootNamespace>
+    <AssemblyName>PowerUtils.AspNetCore.Attributes.ResponseTypes.Tests</AssemblyName>
 
     <!-- BIN OUTPUT -->
     <OutputPath>bin</OutputPath>

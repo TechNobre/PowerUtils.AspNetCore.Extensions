@@ -1,6 +1,4 @@
-﻿using PowerUtils.Text.Tests;
-
-namespace PowerUtils.AspNetCore.Attributes.ResponseTypes.Tests;
+﻿namespace PowerUtils.AspNetCore.Attributes.ResponseTypes.Tests;
 
 public class ResponseTypes400Tests
 {

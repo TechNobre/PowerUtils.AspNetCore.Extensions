@@ -3,7 +3,7 @@
 
 
 
-## [1.0.0] - 2022-03-06
+## [1.0.0] - 2022-03-15
 
 - Kickoff;
 - Moved the attributes from [PowerUtils.AspNetCore.WebAPI](https://github.com/TechNobre/PowerUtils.AspNetCore.WebAPI) project to this one so it can be used individually;

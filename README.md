@@ -12,19 +12,25 @@ Utils, helpers and extensions to AspNetCore
 
 
 ## Support to
-- .NET 3.1, .NET 5.0 and .NET 6.0
+- .NET 3.1
+- .NET 5.0
+- .NET 6.0
 
 
 
 ## Features
 
-- [Installation](#Installation)
 - [Attributes](#Attributes)
 - [Extensions](#Extensions)
   - [UseGeneralRoutePrefix](#Extensions.UseGeneralRoutePrefix)
 
 
-## Documentation
+# Documentation
+
+### Dependencies
+
+- Microsoft.AspNetCore.Mvc.Core [NuGet](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Core/)
+
 
 ### How to use
 

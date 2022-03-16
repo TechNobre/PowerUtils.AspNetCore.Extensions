@@ -6,6 +6,7 @@ namespace PowerUtils.AspNetCore.Attributes
 {
     public class Response201Attribute : ProducesResponseTypeAttribute
     {
+        public Response201Attribute() : base(StatusCodes.Status201Created) { }
         public Response201Attribute(Type type) : base(type, StatusCodes.Status201Created) { }
     }
 }

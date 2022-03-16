@@ -6,6 +6,7 @@ namespace PowerUtils.AspNetCore.Attributes
 {
     public class Response208Attribute : ProducesResponseTypeAttribute
     {
+        public Response208Attribute() : base(StatusCodes.Status208AlreadyReported) { }
         public Response208Attribute(Type type) : base(type, StatusCodes.Status208AlreadyReported) { }
     }
 }

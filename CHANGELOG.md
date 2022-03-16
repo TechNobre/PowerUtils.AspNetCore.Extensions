@@ -3,6 +3,24 @@
 
 
 
+## [1.1.0] - 2022-03-16
+[Full Changelog](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/compare/v1.0.0...v1.1.0)
+
+
+### New Features
+- Added constructor without type parameter for `Response200Attribute`;
+- Added constructor without type parameter for `Response201Attribute`;
+- Added constructor without type parameter for `Response202Attribute`;
+- Added constructor without type parameter for `Response203Attribute`;
+- Added constructor without type parameter for `Response205Attribute`;
+- Added constructor without type parameter for `Response206Attribute`;
+- Added constructor without type parameter for `Response207Attribute`;
+- Added constructor without type parameter for `Response208Attribute`;
+- Added constructor without type parameter for `Response226Attribute`;
+
+
+
+
 ## [1.0.0] - 2022-03-15
 
 - Kickoff;

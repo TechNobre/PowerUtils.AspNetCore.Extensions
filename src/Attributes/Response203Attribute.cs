@@ -6,6 +6,7 @@ namespace PowerUtils.AspNetCore.Attributes
 {
     public class Response203Attribute : ProducesResponseTypeAttribute
     {
+        public Response203Attribute() : base(StatusCodes.Status203NonAuthoritative) { }
         public Response203Attribute(Type type) : base(type, StatusCodes.Status203NonAuthoritative) { }
     }
 }

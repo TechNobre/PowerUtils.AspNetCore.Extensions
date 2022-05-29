@@ -3,6 +3,8 @@
   <PropertyGroup>
     <ProjectGuid>f0626eae-1b16-4733-af5a-1461211be57b</ProjectGuid>
 
+    <CurrentYear>$([System.DateTime]::UtcNow.ToString(yyyy))</CurrentYear>
+
 
     <!-- Assembly and projecto details -->
     <!-- https://docs.microsoft.com/en-us/dotnet/standard/frameworks -->
@@ -14,27 +16,17 @@
     <PackageId>PowerUtils.AspNetCore.Extensions</PackageId>
     <title>PowerUtils.AspNetCore.Extensions</title>
     <Product>PowerUtils.AspNetCore.Extensions</Product>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
 
     <Authors>Nelson Nobre</Authors>
     <Company>TechNobre</Company>
 
     <License>MIT</License>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <Copyright>Copyright © 2022 by TechNobre</Copyright>
+    <Copyright>Copyright © $(CurrentYear) by TechNobre</Copyright>
 
     <Description>Utils, helpers and extensions to AspNetCore</Description>
-    <PackageReleaseNotes>
-      - Added constructor without type parameter for `Response200Attribute`;
-      - Added constructor without type parameter for `Response201Attribute`;
-      - Added constructor without type parameter for `Response202Attribute`;
-      - Added constructor without type parameter for `Response203Attribute`;
-      - Added constructor without type parameter for `Response205Attribute`;
-      - Added constructor without type parameter for `Response206Attribute`;
-      - Added constructor without type parameter for `Response207Attribute`;
-      - Added constructor without type parameter for `Response208Attribute`;
-      - Added constructor without type parameter for `Response226Attribute`;
-    </PackageReleaseNotes>
+    <PackageReleaseNotes>https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/blob/main/CHANGELOG.md</PackageReleaseNotes>
     <Summary>Utils, helpers and extensions to AspNetCore</Summary>
     <PackageTags>PowerUtils;Utils;Helpers;Attributes;Extension;Extensions;AspNetCore</PackageTags>
     <RepositoryUrl>https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions</RepositoryUrl>
@@ -67,32 +59,9 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <DefineConstants>RELEASE;TRACE</DefineConstants>
+    <DefineConstants>RELEASE</DefineConstants>
     <ErrorReport>none</ErrorReport>
     <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-
-
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
-    <DefineConstants>NETSTANDARD;NETSTANDARD2_0</DefineConstants>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.1' ">
-    <DefineConstants>NETSTANDARD;NETSTANDARD2_1</DefineConstants>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'net462' ">
-    <DefineConstants>NETFRAMEWORK;NET462</DefineConstants>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'net48' ">
-    <DefineConstants>NETFRAMEWORK;NET48</DefineConstants>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.1' ">
-    <DefineConstants>NETCOREAPP;NETCOREAPP3_1</DefineConstants>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'net5.0' ">
-    <DefineConstants>NET;NET5</DefineConstants>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'net6.0' ">
-    <DefineConstants>NET;NET6</DefineConstants>
   </PropertyGroup>
 
 

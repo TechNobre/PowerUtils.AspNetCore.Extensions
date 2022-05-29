@@ -16,7 +16,7 @@
     <PackageId>PowerUtils.AspNetCore.Extensions</PackageId>
     <title>PowerUtils.AspNetCore.Extensions</title>
     <Product>PowerUtils.AspNetCore.Extensions</Product>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
 
     <Authors>Nelson Nobre</Authors>
     <Company>TechNobre</Company>

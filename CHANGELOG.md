@@ -3,6 +3,17 @@
 
 
 
+## [1.1.1] - 2022-05-29
+[Full Changelog](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/compare/v1.1.0...v1.1.1)
+
+
+### Enhancements
+
+- Added attributes documentation;
+
+
+
+
 ## [1.1.0] - 2022-03-16
 [Full Changelog](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/compare/v1.0.0...v1.1.0)
 

@@ -1,5 +1,8 @@
 # PowerUtils.AspNetCore.Extensions
-Utils, helpers and extensions to AspNetCore
+
+![Logo](https://raw.githubusercontent.com/TechNobre/PowerUtils.AspNetCore.Extensions/main/assets/logo/logo_128x128.png)
+
+***Utils, helpers and extensions to AspNetCore***
 
 ![Tests](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/actions/workflows/test-project.yml/badge.svg)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=TechNobre_PowerUtils.AspNetCore.Extensions&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=TechNobre_PowerUtils.AspNetCore.Extensions)

@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/compare/v1.1.1...v1.2.0) (2022-07-19)
+
+
+### Features
+
+* Add support to debug in runtime `Microsoft.SourceLink.GitHub` ([00a85ce](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/commit/00a85ce0292f5a47c8bde2b1b0b681bd9fc4aee4))
+
 # [1.1.1](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/compare/v1.1.0...v1.1.1) (2022-05-29)
 
 

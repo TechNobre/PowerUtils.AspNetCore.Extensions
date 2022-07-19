@@ -13,31 +13,35 @@
 [![License: MIT](https://img.shields.io/github/license/TechNobre/PowerUtils.AspNetCore.Extensions.svg)](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/blob/main/LICENSE)
 
 
+- [Support](#support-to)
+- [Dependencies](#dependencies)
+- [How to use](#how-to-use)
+  - [Installation](#installation)
+  - [Attributes](#Attributes)
+  - [Extensions](#Extensions)
+    - [UseGeneralRoutePrefix](#Extensions.UseGeneralRoutePrefix)
+- [Contribution](#contribution)
+- [License](./LICENSE)
+- [Changelog](./CHANGELOG.md)
 
-## Support to
-- .NET 3.1
-- .NET 5.0
+
+
+## Support to <a name="support-to"></a>
 - .NET 6.0
+- .NET 5.0
+- .NET 3.1
 
 
 
-## Features
-
-- [Attributes](#Attributes)
-- [Extensions](#Extensions)
-  - [UseGeneralRoutePrefix](#Extensions.UseGeneralRoutePrefix)
-
-
-# Documentation
-
-### Dependencies
+## Dependencies <a name="dependencies"></a>
 
 - Microsoft.AspNetCore.Mvc.Core [NuGet](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Core/)
 
 
-### How to use
 
-#### Install NuGet package <a name="Installation"></a>
+## How to use <a name="how-to-use"></a>
+
+### Install NuGet package <a name="Installation"></a>
 This package is available through Nuget Packages: https://www.nuget.org/packages/PowerUtils.AspNetCore.Extensions
 
 **Nuget**
@@ -112,20 +116,6 @@ public class Startup
 
 
 
-## Contribution
+## Contribution <a name="contribution"></a>
 
-*Help me to help others*
-
-
-
-
-## LICENSE
-
-[MIT](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/blob/main/LICENSE)
-
-
-
-
-## Changelog
-
-[Here](./CHANGELOG.md)
+If you have any questions, comments, or suggestions, please open an [issue](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/issues/new/choose) or create a [pull request](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/compare)

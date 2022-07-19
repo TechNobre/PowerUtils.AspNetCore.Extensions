@@ -6,7 +6,7 @@ namespace PowerUtils.AspNetCore.Extensions.Tests.AttributesTests;
 public class ResponseTypes4XXTests
 {
     [Fact]
-    public void Constructor_Response400Attribute()
+    public void Attribute_Constructor_Response400Attribute()
     {
         // Arrange && Act
         var act = new Response400Attribute(typeof(FakeResponse));
@@ -21,7 +21,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response401Attribute()
+    public void Attribute_Constructor_Response401Attribute()
     {
         // Arrange && Act
         var act = new Response401Attribute(typeof(FakeResponse));
@@ -36,7 +36,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response402Attribute()
+    public void Attribute_Constructor_Response402Attribute()
     {
         // Arrange && Act
         var act = new Response402Attribute(typeof(FakeResponse));
@@ -51,7 +51,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response403Attribute()
+    public void Attribute_Constructor_Response403Attribute()
     {
         // Arrange && Act
         var act = new Response403Attribute(typeof(FakeResponse));
@@ -66,7 +66,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response404Attribute()
+    public void Attribute_Constructor_Response404Attribute()
     {
         // Arrange && Act
         var act = new Response404Attribute(typeof(FakeResponse));
@@ -81,7 +81,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response405Attribute()
+    public void Attribute_Constructor_Response405Attribute()
     {
         // Arrange && Act
         var act = new Response405Attribute(typeof(FakeResponse));
@@ -96,7 +96,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response406Attribute()
+    public void Attribute_Constructor_Response406Attribute()
     {
         // Arrange && Act
         var act = new Response406Attribute(typeof(FakeResponse));
@@ -111,7 +111,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response407Attribute()
+    public void Attribute_Constructor_Response407Attribute()
     {
         // Arrange && Act
         var act = new Response407Attribute(typeof(FakeResponse));
@@ -126,7 +126,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response408Attribute()
+    public void Attribute_Constructor_Response408Attribute()
     {
         // Arrange && Act
         var act = new Response408Attribute(typeof(FakeResponse));
@@ -141,7 +141,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response409Attribute()
+    public void Attribute_Constructor_Response409Attribute()
     {
         // Arrange && Act
         var act = new Response409Attribute(typeof(FakeResponse));
@@ -156,7 +156,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response410Attribute()
+    public void Attribute_Constructor_Response410Attribute()
     {
         // Arrange && Act
         var act = new Response410Attribute(typeof(FakeResponse));
@@ -171,7 +171,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response411Attribute()
+    public void Attribute_Constructor_Response411Attribute()
     {
         // Arrange && Act
         var act = new Response411Attribute(typeof(FakeResponse));
@@ -186,7 +186,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response412Attribute()
+    public void Attribute_Constructor_Response412Attribute()
     {
         // Arrange && Act
         var act = new Response412Attribute(typeof(FakeResponse));
@@ -201,7 +201,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response413Attribute()
+    public void Attribute_Constructor_Response413Attribute()
     {
         // Arrange && Act
         var act = new Response413Attribute(typeof(FakeResponse));
@@ -216,7 +216,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response414Attribute()
+    public void Attribute_Constructor_Response414Attribute()
     {
         // Arrange && Act
         var act = new Response414Attribute(typeof(FakeResponse));
@@ -231,7 +231,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response415Attribute()
+    public void Attribute_Constructor_Response415Attribute()
     {
         // Arrange && Act
         var act = new Response415Attribute(typeof(FakeResponse));
@@ -246,7 +246,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response416Attribute()
+    public void Attribute_Constructor_Response416Attribute()
     {
         // Arrange && Act
         var act = new Response416Attribute(typeof(FakeResponse));
@@ -261,7 +261,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response417Attribute()
+    public void Attribute_Constructor_Response417Attribute()
     {
         // Arrange && Act
         var act = new Response417Attribute(typeof(FakeResponse));
@@ -276,7 +276,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response418Attribute()
+    public void Attribute_Constructor_Response418Attribute()
     {
         // Arrange && Act
         var act = new Response418Attribute(typeof(FakeResponse));
@@ -291,7 +291,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response422Attribute()
+    public void Attribute_Constructor_Response422Attribute()
     {
         // Arrange && Act
         var act = new Response422Attribute(typeof(FakeResponse));
@@ -306,7 +306,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response426Attribute()
+    public void Attribute_Constructor_Response426Attribute()
     {
         // Arrange && Act
         var act = new Response426Attribute(typeof(FakeResponse));
@@ -321,7 +321,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response428Attribute()
+    public void Attribute_Constructor_Response428Attribute()
     {
         // Arrange && Act
         var act = new Response428Attribute(typeof(FakeResponse));
@@ -336,7 +336,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response429Attribute()
+    public void Attribute_Constructor_Response429Attribute()
     {
         // Arrange && Act
         var act = new Response429Attribute(typeof(FakeResponse));
@@ -351,7 +351,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response431Attribute()
+    public void Attribute_Constructor_Response431Attribute()
     {
         // Arrange && Act
         var act = new Response431Attribute(typeof(FakeResponse));
@@ -366,7 +366,7 @@ public class ResponseTypes4XXTests
     }
 
     [Fact]
-    public void Constructor_Response451Attribute()
+    public void Attribute_Constructor_Response451Attribute()
     {
         // Arrange && Act
         var act = new Response451Attribute(typeof(FakeResponse));

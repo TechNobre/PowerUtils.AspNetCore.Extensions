@@ -12,8 +12,9 @@ public class GeneralRoutePrefixControllerTests
         => _testsFixture = testsFixture;
 
 
-    [Fact(DisplayName = "Send request to endpoint without attribute")]
-    public async void Route_WithoutAttribute()
+
+    [Fact]
+    public async void RouteWithoutAttribute_Class_OK()
     {
         // Arrange && Act
         var act = await _testsFixture.Client.GetAsync("/samples/prefix");
@@ -25,8 +26,8 @@ public class GeneralRoutePrefixControllerTests
     }
 
 
-    [Fact(DisplayName = "Send request to endpoint with general prefix")]
-    public async void Route_WithGeneralPrefix()
+    [Fact]
+    public async void RouteWithGeneralPrefix_Class_OK()
     {
         // Arrange && Act
         var act = await _testsFixture.Client.GetAsync("/samples/prefix/with-prefix");
@@ -38,8 +39,8 @@ public class GeneralRoutePrefixControllerTests
     }
 
 
-    [Fact(DisplayName = "Send request to endpoint without general prefix")]
-    public async void Route_WithoutGeneralPrefix()
+    [Fact]
+    public async void RouteWithoutGeneralPrefix_Class_OK()
     {
         // Arrange && Act
         var act = await _testsFixture.Client.GetAsync("/without-prefix");

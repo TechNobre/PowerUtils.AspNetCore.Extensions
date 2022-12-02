@@ -8,7 +8,7 @@
     <!-- https://docs.microsoft.com/en-us/dotnet/standard/frameworks -->
     <TargetFrameworks>net6.0;net5.0;netcoreapp3.1</TargetFrameworks>
 
-    
+
     <AssemblyName>PowerUtils.AspNetCore.Extensions</AssemblyName>
     <RootNamespace>PowerUtils.AspNetCore</RootNamespace>
 

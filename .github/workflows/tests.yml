@@ -35,6 +35,7 @@ jobs:
           ${{ env.SDK_VERSION_7 }}
           ${{ env.SDK_VERSION_6 }}
           ${{ env.SDK_VERSION_5 }}
+          ${{ env.SDK_VERSION_3 }}
 
     - name: "Restore dependencies"
       run: dotnet restore

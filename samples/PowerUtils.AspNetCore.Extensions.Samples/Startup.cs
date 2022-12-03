@@ -2,28 +2,29 @@
 using Microsoft.Extensions.DependencyInjection;
 using PowerUtils.AspNetCore.Extensions;
 
-namespace PowerUtils.AspNetCore.ErrorHandler.Samples;
-
-public class Startup
+namespace PowerUtils.AspNetCore.ErrorHandler.Samples
 {
-    public void ConfigureServices(IServiceCollection services)
+    public class Startup
     {
-        services.AddControllers(configure =>
-            configure.UseGeneralRoutePrefix("/samples")
-        );
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddControllers(configure =>
+                configure.UseGeneralRoutePrefix("/samples")
+            );
 
-        services.AddSwaggerGen();
-    }
+            services.AddSwaggerGen();
+        }
 
-    public void Configure(IApplicationBuilder app)
-    {
-        app.UseSwagger();
-        app.UseSwaggerUI();
+        public void Configure(IApplicationBuilder app)
+        {
+            app.UseSwagger();
+            app.UseSwaggerUI();
 
-        app.UseRouting();
+            app.UseRouting();
 
-        app.UseEndpoints(endpoints
-            => endpoints.MapControllers() // Mapping all controller
-        );
+            app.UseEndpoints(endpoints
+                => endpoints.MapControllers() // Mapping all controller
+            );
+        }
     }
 }

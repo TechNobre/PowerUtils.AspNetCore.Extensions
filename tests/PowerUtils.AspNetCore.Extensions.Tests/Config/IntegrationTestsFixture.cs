@@ -4,35 +4,37 @@ using System.Net.Http.Headers;
 using System.Net.Mime;
 using Microsoft.AspNetCore.Mvc.Testing;
 using PowerUtils.AspNetCore.ErrorHandler.Samples;
+using Xunit;
 
-namespace PowerUtils.AspNetCore.Extensions.Tests.Config;
-
-[CollectionDefinition(nameof(IntegrationApiTestsFixtureCollection))]
-public class IntegrationApiTestsFixtureCollection : ICollectionFixture<IntegrationTestsFixture> { }
-
-public class IntegrationTestsFixture : IDisposable
+namespace PowerUtils.AspNetCore.Extensions.Tests.Config
 {
-    public HttpClient Client;
+    [CollectionDefinition(nameof(IntegrationApiTestsFixtureCollection))]
+    public class IntegrationApiTestsFixtureCollection : ICollectionFixture<IntegrationTestsFixture> { }
 
-    private readonly WebAPIFactory<Startup> _factory;
-
-    public IntegrationTestsFixture()
+    public class IntegrationTestsFixture : IDisposable
     {
-        var clientOptions = new WebApplicationFactoryClientOptions();
+        public HttpClient Client;
 
-        _factory = new WebAPIFactory<Startup>();
+        private readonly WebApplicationFactory<Startup> _factory;
 
-        Client = _factory.CreateClient(clientOptions);
-        Client.DefaultRequestHeaders.Clear();
-        Client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(MediaTypeNames.Application.Json));
-    }
+        public IntegrationTestsFixture()
+        {
+            var clientOptions = new WebApplicationFactoryClientOptions();
 
-    public void Dispose()
-    {
-        Client.Dispose();
+            _factory = new WebApplicationFactory<Startup>();
 
-        _factory.Dispose();
+            Client = _factory.CreateClient(clientOptions);
+            Client.DefaultRequestHeaders.Clear();
+            Client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(MediaTypeNames.Application.Json));
+        }
 
-        GC.SuppressFinalize(this);
+        public void Dispose()
+        {
+            Client.Dispose();
+
+            _factory.Dispose();
+
+            GC.SuppressFinalize(this);
+        }
     }
 }

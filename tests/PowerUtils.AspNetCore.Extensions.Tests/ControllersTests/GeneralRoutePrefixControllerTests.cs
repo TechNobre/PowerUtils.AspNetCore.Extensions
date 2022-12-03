@@ -1,53 +1,56 @@
 ﻿using System.Net;
+using FluentAssertions;
 using PowerUtils.AspNetCore.Extensions.Tests.Config;
+using Xunit;
 
-namespace PowerUtils.AspNetCore.Extensions.Tests.ControllersTests;
-
-[Collection(nameof(IntegrationApiTestsFixtureCollection))]
-public class GeneralRoutePrefixControllerTests
+namespace PowerUtils.AspNetCore.Extensions.Tests.ControllersTests
 {
-    private readonly IntegrationTestsFixture _testsFixture;
-
-    public GeneralRoutePrefixControllerTests(IntegrationTestsFixture testsFixture)
-        => _testsFixture = testsFixture;
-
-
-
-    [Fact]
-    public async void RouteWithoutAttribute_Class_OK()
+    [Collection(nameof(IntegrationApiTestsFixtureCollection))]
+    public class GeneralRoutePrefixControllerTests
     {
-        // Arrange && Act
-        var act = await _testsFixture.Client.GetAsync("/samples/prefix");
+        private readonly IntegrationTestsFixture _testsFixture;
+
+        public GeneralRoutePrefixControllerTests(IntegrationTestsFixture testsFixture)
+            => _testsFixture = testsFixture;
 
 
-        // Assert
-        act.StatusCode.Should()
-            .Be(HttpStatusCode.OK);
-    }
+
+        [Fact]
+        public async void RouteWithoutTemplateInAttribute_Get_OK()
+        {
+            // Arrange && Act
+            var act = await _testsFixture.Client.GetAsync("/samples/prefix");
 
 
-    [Fact]
-    public async void RouteWithGeneralPrefix_Class_OK()
-    {
-        // Arrange && Act
-        var act = await _testsFixture.Client.GetAsync("/samples/prefix/with-prefix");
+            // Assert
+            act.StatusCode.Should()
+                .Be(HttpStatusCode.OK);
+        }
 
 
-        // Assert
-        act.StatusCode.Should()
-            .Be(HttpStatusCode.OK);
-    }
+        [Fact]
+        public async void RouteWithGeneralPrefix_Get_OK()
+        {
+            // Arrange && Act
+            var act = await _testsFixture.Client.GetAsync("/samples/prefix/with-prefix");
 
 
-    [Fact]
-    public async void RouteWithoutGeneralPrefix_Class_OK()
-    {
-        // Arrange && Act
-        var act = await _testsFixture.Client.GetAsync("/without-prefix");
+            // Assert
+            act.StatusCode.Should()
+                .Be(HttpStatusCode.OK);
+        }
 
 
-        // Assert
-        act.StatusCode.Should()
-            .Be(HttpStatusCode.OK);
+        [Fact]
+        public async void RouteWithoutGeneralPrefix_Get_OK()
+        {
+            // Arrange && Act
+            var act = await _testsFixture.Client.GetAsync("/without-prefix");
+
+
+            // Assert
+            act.StatusCode.Should()
+                .Be(HttpStatusCode.OK);
+        }
     }
 }

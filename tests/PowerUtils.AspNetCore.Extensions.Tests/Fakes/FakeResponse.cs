@@ -1,6 +1,7 @@
-﻿namespace PowerUtils.AspNetCore.Extensions.Tests.Fakes;
-
-public class FakeResponse
+﻿namespace PowerUtils.AspNetCore.Extensions.Tests.Fakes
 {
-    public int Val { get; set; }
+    public class FakeResponse
+    {
+        public int Val { get; set; }
+    }
 }

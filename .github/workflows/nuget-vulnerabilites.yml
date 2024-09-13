@@ -11,7 +11,10 @@ on:
 
 
 env:
-  SDK_VERSION: '7.0.407'
+  SDK_VERSION_7: '7.0.407'
+  SDK_VERSION_6: '6.0.420'
+  SDK_VERSION_5: '5.0.408'
+  SDK_VERSION_3: '3.1.426'
 
 
 jobs:
@@ -25,9 +28,13 @@ jobs:
       uses: actions/checkout@v4
 
     - name: "Setup .NET"
-      uses: actions/setup-dotnet@v4
+      uses: actions/setup-dotnet@v4.0.0
       with:
-        dotnet-version: ${{ env.SDK_VERSION }}
+        dotnet-version: |
+          ${{ env.SDK_VERSION_7 }}
+          ${{ env.SDK_VERSION_6 }}
+          ${{ env.SDK_VERSION_5 }}
+          ${{ env.SDK_VERSION_3 }}
 
     - name: "Restore dependencies"
       run: dotnet restore

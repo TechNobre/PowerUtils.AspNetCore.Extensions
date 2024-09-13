@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/compare/v1.3.0...v1.4.0) (2024-09-13)
+
+
+### Features
+
+* Added support to .NET8 ([47f26c4](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/commit/47f26c415509ad3de0afae702ffe781e6143c302))
+
 # [1.3.0](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/compare/v1.2.0...v1.3.0) (2022-12-03)
 
 

@@ -11,8 +11,9 @@ on:
 
 
 env:
-  SDK_VERSION_7: '7.0.407'
-  SDK_VERSION_6: '6.0.420'
+  SDK_VERSION_8: '8.0.401'
+  SDK_VERSION_7: '7.0.410'
+  SDK_VERSION_6: '6.0.425'
   SDK_VERSION_5: '5.0.408'
   SDK_VERSION_3: '3.1.426'
   TEST_RESULTS_DIRECTORY: './TestResults'
@@ -34,9 +35,10 @@ jobs:
       uses: actions/checkout@v4
 
     - name: "Setup .NET"
-      uses: actions/setup-dotnet@v4.0.0
+      uses: actions/setup-dotnet@v4.0.1
       with:
         dotnet-version: |
+          ${{ env.SDK_VERSION_8 }}
           ${{ env.SDK_VERSION_7 }}
           ${{ env.SDK_VERSION_6 }}
           ${{ env.SDK_VERSION_5 }}
@@ -52,7 +54,7 @@ jobs:
       run: dotnet test --configuration Release --no-build --verbosity normal --results-directory ${{ env.TEST_RESULTS_DIRECTORY }} --collect:"XPlat Code Coverage"
 
     - name: "Combine Coverage Reports" # This is because one report is produced per project, and we want one result for all of them.
-      uses: danielpalme/ReportGenerator-GitHub-Action@5.3.7
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.3.9
       with:
         reports: "**/*.cobertura.xml" # REQUIRED # The coverage reports that should be parsed (separated by semicolon). Globbing is supported.
         targetdir: "${{ github.workspace }}" # REQUIRED # The directory where the generated report should be saved.
@@ -104,7 +106,7 @@ jobs:
         reporter: dotnet-trx
 
     - name: "Publish Test Summary"
-      uses: EnricoMi/publish-unit-test-result-action@v2.16.1
+      uses: EnricoMi/publish-unit-test-result-action@v2.17.1
       if: always()
       with:
         check_name: "Test Summary"

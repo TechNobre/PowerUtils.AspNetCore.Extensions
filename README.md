@@ -17,20 +17,19 @@
 [![License: MIT](https://img.shields.io/github/license/TechNobre/PowerUtils.AspNetCore.Extensions.svg)](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/blob/main/LICENSE)
 
 
-- [Support](#support-to)
-- [Dependencies](#dependencies)
-- [How to use](#how-to-use)
-  - [Installation](#installation)
-  - [Attributes](#Attributes)
-  - [Extensions](#Extensions)
-    - [UseGeneralRoutePrefix](#Extensions.UseGeneralRoutePrefix)
-- [Contribution](#contribution)
-- [License](./LICENSE)
-- [Changelog](./CHANGELOG.md)
+- [Support to ](#support-to-)
+- [Dependencies ](#dependencies-)
+- [How to use ](#how-to-use-)
+  - [Install NuGet package ](#install-nuget-package-)
+  - [Attributes ](#attributes-)
+  - [Extensions ](#extensions-)
+    - [UseGeneralRoutePrefix ](#usegeneralrouteprefix-)
+- [Contribution ](#contribution-)
 
 
 
 ## Support to <a name="support-to"></a>
+- .NET 8.0
 - .NET 7.0
 - .NET 6.0
 - .NET 5.0

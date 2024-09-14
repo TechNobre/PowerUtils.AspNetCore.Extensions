@@ -13,7 +13,12 @@ on:
 
 
 env:
-  SDK_VERSION: '8.0.401'
+  SDK_VERSION_8: '8.0.401'
+  SDK_VERSION_7: '7.0.410'
+  SDK_VERSION_6: '6.0.425'
+  SDK_VERSION_5: '5.0.408'
+  SDK_VERSION_3: '3.1.426'
+
   PACKAGE_PATH: ./src/**/*.nupkg
   NUGET_SERVER: https://api.nuget.org/v3/index.json
 
@@ -36,7 +41,12 @@ jobs:
     - name: "Setup .NET"
       uses: actions/setup-dotnet@v4.0.1
       with:
-        dotnet-version: ${{ env.SDK_VERSION }}
+        dotnet-version: |
+          ${{ env.SDK_VERSION_8 }}
+          ${{ env.SDK_VERSION_7 }}
+          ${{ env.SDK_VERSION_6 }}
+          ${{ env.SDK_VERSION_5 }}
+          ${{ env.SDK_VERSION_3 }}
 
     - name: Semantic Release
       id: 'semantic-release'
@@ -88,7 +98,12 @@ jobs:
     - name: "Setup .NET"
       uses: actions/setup-dotnet@v4.0.1
       with:
-        dotnet-version: ${{ env.SDK_VERSION }}
+        dotnet-version: |
+          ${{ env.SDK_VERSION_8 }}
+          ${{ env.SDK_VERSION_7 }}
+          ${{ env.SDK_VERSION_6 }}
+          ${{ env.SDK_VERSION_5 }}
+          ${{ env.SDK_VERSION_3 }}
 
     - name: "Restore dependencies"
       run: dotnet restore

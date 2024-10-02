@@ -93,7 +93,7 @@ jobs:
 
     - name: "Test for main version"
       if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
-      run: dotnet stryker -tp ${{ env.TEST_PROJECT_PATH }} -p ${{ env.PROJECT_FILE }} --reporter json --reporter markdown --reporter progress --reporter dashboard --dashboard-api-key ${{ secrets.STRYKER_API_KEY }} --version main -O ${{ github.workspace }}/mutations
+      run: dotnet stryker -tp ${{ env.TEST_PROJECT_PATH }} -p ${{ env.PROJECT_FILE }} --reporter markdown --reporter progress --reporter dashboard --dashboard-api-key ${{ secrets.STRYKER_API_KEY }} --version main -O ${{ github.workspace }}/mutations
 
     - name: "Display branch details"
       if: github.event_name == 'pull_request'
@@ -102,39 +102,40 @@ jobs:
 
     - name: "Test for PR"
       if: github.event_name == 'pull_request'
-      run: dotnet stryker -tp ${{ env.TEST_PROJECT_PATH }} -p ${{ env.PROJECT_FILE }} --reporter json --reporter markdown --reporter progress --reporter dashboard --dashboard-api-key ${{ secrets.STRYKER_API_KEY }} --version ${{ github.head_ref }}-${{ github.run_number }} -O ${{ github.workspace }}/mutations
+      #run: dotnet stryker -tp ${{ env.TEST_PROJECT_PATH }} -p ${{ env.PROJECT_FILE }} --reporter json --reporter markdown --reporter progress --reporter dashboard --dashboard-api-key ${{ secrets.STRYKER_API_KEY }} --version ${{ github.head_ref }}-${{ github.run_number }} -O ${{ github.workspace }}/mutations
+      run: dotnet stryker -tp ${{ env.TEST_PROJECT_PATH }} -p ${{ env.PROJECT_FILE }} --reporter markdown --reporter progress --reporter dashboard --dashboard-api-key ${{ secrets.STRYKER_API_KEY }} --version ${{ github.head_ref }}-${{ github.run_number }}
 
     - name: "Convert report to Sonar"
       run: jq -f tests/mutation-report-to-sonar.jq '${{ github.workspace }}/mutations/reports/mutation-report.json' > '${{ github.workspace }}/mutations/reports/mutation-sonar.json'
 
-    - name: "Comment PR"
-      uses: actions/github-script@v7.0.1
-      if: github.event_name == 'pull_request'
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        script: |
-          const { issue: { number: issue_number }, repo: { owner, repo } } = context;
-          const message = `🚀 **Stryker report generated** 🚀
-            [![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2F${{ env.GIT_ORGANIZATION }}%2F${{ env.PROJECT_NAME }}%2F${{ github.head_ref }}-${{ github.run_number }})](https://dashboard.stryker-mutator.io/reports/github.com/${{ env.GIT_ORGANIZATION }}/${{ env.PROJECT_NAME }}/${{ github.head_ref }}-${{ github.run_number }})
-            To more details: https://dashboard.stryker-mutator.io/reports/github.com/${{ env.GIT_ORGANIZATION }}/${{ env.PROJECT_NAME }}/${{ github.head_ref }}-${{ github.run_number }}`;
-            github.rest.issues.createComment({
-              issue_number,
-              owner,
-              repo,
-              body: message
-            });
+    # - name: "Comment PR"
+    #   uses: actions/github-script@v7.0.1
+    #   if: github.event_name == 'pull_request'
+    #   with:
+    #     github-token: ${{ secrets.GITHUB_TOKEN }}
+    #     script: |
+    #       const { issue: { number: issue_number }, repo: { owner, repo } } = context;
+    #       const message = `🚀 **Stryker report generated** 🚀
+    #         [![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2F${{ env.GIT_ORGANIZATION }}%2F${{ env.PROJECT_NAME }}%2F${{ github.head_ref }}-${{ github.run_number }})](https://dashboard.stryker-mutator.io/reports/github.com/${{ env.GIT_ORGANIZATION }}/${{ env.PROJECT_NAME }}/${{ github.head_ref }}-${{ github.run_number }})
+    #         To more details: https://dashboard.stryker-mutator.io/reports/github.com/${{ env.GIT_ORGANIZATION }}/${{ env.PROJECT_NAME }}/${{ github.head_ref }}-${{ github.run_number }}`;
+    #         github.rest.issues.createComment({
+    #           issue_number,
+    #           owner,
+    #           repo,
+    #           body: message
+    #         });
 
-    - name: "Publish report"
-      run: |
-        cat $(find ${{ github.workspace }}/mutations/reports/* -name "*.md") > $GITHUB_STEP_SUMMARY
+    # - name: "Publish report"
+    #   run: |
+    #     cat $(find ${{ github.workspace }}/mutations/reports/* -name "*.md") > $GITHUB_STEP_SUMMARY
 
-    - name: "Build and analyze"
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      shell: pwsh
-      run: |
-        ./.sonar/scanner/dotnet-sonarscanner begin /k:"${{ secrets.SONAR_PROJECT_KEY }}" /o:"${{ secrets.SONAR_ORGANIZATION }}" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.vscoveragexml.reportsPaths=coverage.xml /d:sonar.projectBaseDir="$(pwd)" /d:sonar.externalIssuesReportPaths="${{ github.workspace }}/mutations/reports/mutation-sonar.json"
-        dotnet build -c Release --no-incremental
-        ./.sonar/scanner/dotnet-coverage collect "dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover -c Release --no-restore --no-build" -f xml -o "coverage.xml"
-        ./.sonar/scanner/dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
+    # - name: "Build and analyze"
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
+    #     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+    #   shell: pwsh
+    #   run: |
+    #     ./.sonar/scanner/dotnet-sonarscanner begin /k:"${{ secrets.SONAR_PROJECT_KEY }}" /o:"${{ secrets.SONAR_ORGANIZATION }}" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.vscoveragexml.reportsPaths=coverage.xml /d:sonar.projectBaseDir="$(pwd)" /d:sonar.externalIssuesReportPaths="${{ github.workspace }}/mutations/reports/mutation-sonar.json"
+    #     dotnet build -c Release --no-incremental
+    #     ./.sonar/scanner/dotnet-coverage collect "dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover -c Release --no-restore --no-build" -f xml -o "coverage.xml"
+    #     ./.sonar/scanner/dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"

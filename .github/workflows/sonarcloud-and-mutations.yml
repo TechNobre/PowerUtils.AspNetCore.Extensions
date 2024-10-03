@@ -21,8 +21,8 @@ env:
   SDK_VERSION: '8.0.402'
   FRAMEWORK_VERSION: 'net8.0'
 
-  PROJECT_FILE: 'Test.Nuget.Please.Dont.Use.csproj'
-  TEST_PROJECT_PATH: 'tests/Test.Nuget.Please.Dont.Use.Tests/Test.Nuget.Please.Dont.Use.Tests.csproj'
+  PROJECT_FILE: 'PowerUtils.AspNetCore.Extensions.csproj'
+  TEST_PROJECT_PATH: 'tests/PowerUtils.AspNetCore.Extensions.Tests/PowerUtils.AspNetCore.Extensions.Tests.csproj'
 
 
 permissions:

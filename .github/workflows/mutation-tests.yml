@@ -38,6 +38,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: "Define branch name for Stryker"
+      run: |
+        if [[ "${{ github.ref }}" == "refs/heads/main" ]]; then
+          echo "STRYKER_BRANCH=main" >> $GITHUB_ENV
+        else
+          echo "STRYKER_BRANCH=${{ github.head_ref }}-${{ github.run_number }}" >> $GITHUB_ENV
+        fi
+
+    - name: "Display branch name for Stryker"
+      run: echo "Stryker branch is '${{ env.STRYKER_BRANCH }}'"
+
+
+
+
+
+
+
+
     - name: "Checkout"
       uses: actions/checkout@v4
 

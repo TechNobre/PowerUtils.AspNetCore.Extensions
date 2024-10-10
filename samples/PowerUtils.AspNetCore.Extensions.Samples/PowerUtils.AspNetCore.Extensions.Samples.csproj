@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
-    <PackageReference Include="System.Text.Json" Version="8.0.4" /> <!-- Update directly to fix vulnerability https://github.com/advisories/GHSA-hh2w-p6rv-4g7w -->
+    <PackageReference Include="System.Text.Json" Version="8.0.5" /> <!-- To solve vulnerability issues -->
   </ItemGroup>
 
 

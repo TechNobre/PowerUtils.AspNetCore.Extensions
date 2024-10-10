@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/compare/v1.4.0...v1.4.1) (2024-10-10)
+
+
+### Bug Fixes
+
+* Update System.Text.Json to fix vulnerability ([5b86218](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/commit/5b862180411b29fcb1067db51013ffbd343728c5))
+
 # [1.4.0](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/compare/v1.3.0...v1.4.0) (2024-09-13)
 
 

@@ -1,4 +1,5 @@
 ﻿using System.Net;
+using System.Threading.Tasks;
 using FluentAssertions;
 using PowerUtils.AspNetCore.Extensions.Tests.Config;
 using Xunit;
@@ -16,7 +17,7 @@ namespace PowerUtils.AspNetCore.Extensions.Tests.ControllersTests
 
 
         [Fact]
-        public async void RouteWithoutTemplateInAttribute_Get_OK()
+        public async Task RouteWithoutTemplateInAttribute_Get_OK()
         {
             // Arrange && Act
             var act = await _testsFixture.Client.GetAsync("/samples/prefix");
@@ -29,7 +30,7 @@ namespace PowerUtils.AspNetCore.Extensions.Tests.ControllersTests
 
 
         [Fact]
-        public async void RouteWithGeneralPrefix_Get_OK()
+        public async Task RouteWithGeneralPrefix_Get_OK()
         {
             // Arrange && Act
             var act = await _testsFixture.Client.GetAsync("/samples/prefix/with-prefix");
@@ -42,7 +43,7 @@ namespace PowerUtils.AspNetCore.Extensions.Tests.ControllersTests
 
 
         [Fact]
-        public async void RouteWithoutGeneralPrefix_Get_OK()
+        public async Task RouteWithoutGeneralPrefix_Get_OK()
         {
             // Arrange && Act
             var act = await _testsFixture.Client.GetAsync("/without-prefix");

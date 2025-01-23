@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
-    <PackageReference Include="System.Text.Json" Version="8.0.5" /> <!-- To solve vulnerability issues -->
+    <PackageReference Include="System.Text.Json" Version="9.0.1" /> <!-- To solve vulnerability issues -->
   </ItemGroup>
 
 

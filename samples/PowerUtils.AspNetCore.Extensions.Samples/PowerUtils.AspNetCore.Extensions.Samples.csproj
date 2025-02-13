@@ -11,7 +11,7 @@
 
 
   <ItemGroup>
-    <PackageReference Include="System.Text.Json" Version="9.0.1" /> <!-- To solve vulnerability issues -->
+    <PackageReference Include="System.Text.Json" Version="9.0.2" /> <!-- To solve vulnerability issues -->
   </ItemGroup>
   <ItemGroup Condition=" '$(TargetFramework)' != 'net5.0' and '$(TargetFramework)' != 'netcoreapp3.1' ">
     <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />

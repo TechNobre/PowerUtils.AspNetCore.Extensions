@@ -2,7 +2,7 @@ name: 'NuGet vulnerabilites'
 
 
 on:
-  workflow_dispatch: # To can dispatch manually
+  workflow_dispatch:
 
   pull_request:
     types: [opened, reopened, edited, synchronize]

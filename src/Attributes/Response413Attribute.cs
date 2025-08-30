@@ -7,6 +7,7 @@ namespace PowerUtils.AspNetCore.Attributes
     /// <summary>
     /// Response with status code 413 (PayloadTooLarge)
     /// </summary>
+    [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
     public class Response413Attribute : ProducesResponseTypeAttribute
     {
         public Response413Attribute(Type type) : base(type, StatusCodes.Status413PayloadTooLarge) { }

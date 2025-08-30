@@ -7,6 +7,7 @@ namespace PowerUtils.AspNetCore.Attributes
     /// <summary>
     /// Response with status code 203 (NonAuthoritative)
     /// </summary>
+    [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
     public class Response203Attribute : ProducesResponseTypeAttribute
     {
         public Response203Attribute() : base(StatusCodes.Status203NonAuthoritative) { }

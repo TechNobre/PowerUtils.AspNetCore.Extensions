@@ -7,6 +7,7 @@ namespace PowerUtils.AspNetCore.Attributes
     /// <summary>
     /// Response with status code 207 (MultiStatus)
     /// </summary>
+    [Obsolete("This package has been discontinued because it never evolved, and the code present in this package does not justify its continuation. It is preferable to implement this code directly in the project if necessary.")]
     public class Response207Attribute : ProducesResponseTypeAttribute
     {
         public Response207Attribute() : base(StatusCodes.Status207MultiStatus) { }

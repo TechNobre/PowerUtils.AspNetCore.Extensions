@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/compare/v1.5.0...v2.0.0) (2025-08-30)
+
+
+### Bug Fixes
+
+* Marked all implementations as `Obsolete` ([1a3c0fa](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/commit/1a3c0faa0975b9f22fcc7746173e8563c4658b1b))
+
+
+### BREAKING CHANGES
+
+* Deprecated package
+
 # [1.5.0](https://github.com/TechNobre/PowerUtils.AspNetCore.Extensions/compare/v1.4.1...v1.5.0) (2024-11-13)
 
 
